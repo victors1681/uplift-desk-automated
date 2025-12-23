@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		8D5263242EFA20E00097DAEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D52630D2EFA20DF0097DAEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5263142EFA20DF0097DAEB;
+			remoteInfo = "uplift-desk-automated";
+		};
+		8D52632E2EFA20E00097DAEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D52630D2EFA20DF0097DAEB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D5263142EFA20DF0097DAEB;
+			remoteInfo = "uplift-desk-automated";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D5263152EFA20DF0097DAEB /* uplift-desk-automated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uplift-desk-automated.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5263232EFA20E00097DAEB /* uplift-desk-automatedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uplift-desk-automatedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D52632D2EFA20E00097DAEB /* uplift-desk-automatedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uplift-desk-automatedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		8D5263172EFA20DF0097DAEB /* uplift-desk-automated */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "uplift-desk-automated";
+			sourceTree = "<group>";
+		};
+		8D5263262EFA20E00097DAEB /* uplift-desk-automatedTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "uplift-desk-automatedTests";
+			sourceTree = "<group>";
+		};
+		8D5263302EFA20E00097DAEB /* uplift-desk-automatedUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "uplift-desk-automatedUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5263122EFA20DF0097DAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5263202EFA20E00097DAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D52632A2EFA20E00097DAEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8D52630C2EFA20DF0097DAEB = {
+			isa = PBXGroup;
+			children = (
+				8D5263172EFA20DF0097DAEB /* uplift-desk-automated */,
+				8D5263262EFA20E00097DAEB /* uplift-desk-automatedTests */,
+				8D5263302EFA20E00097DAEB /* uplift-desk-automatedUITests */,
+				8D5263162EFA20DF0097DAEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8D5263162EFA20DF0097DAEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5263152EFA20DF0097DAEB /* uplift-desk-automated.app */,
+				8D5263232EFA20E00097DAEB /* uplift-desk-automatedTests.xctest */,
+				8D52632D2EFA20E00097DAEB /* uplift-desk-automatedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5263142EFA20DF0097DAEB /* uplift-desk-automated */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D5263372EFA20E00097DAEB /* Build configuration list for PBXNativeTarget "uplift-desk-automated" */;
+			buildPhases = (
+				8D5263112EFA20DF0097DAEB /* Sources */,
+				8D5263122EFA20DF0097DAEB /* Frameworks */,
+				8D5263132EFA20DF0097DAEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8D5263172EFA20DF0097DAEB /* uplift-desk-automated */,
+			);
+			name = "uplift-desk-automated";
+			packageProductDependencies = (
+			);
+			productName = "uplift-desk-automated";
+			productReference = 8D5263152EFA20DF0097DAEB /* uplift-desk-automated.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D5263222EFA20E00097DAEB /* uplift-desk-automatedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D52633A2EFA20E00097DAEB /* Build configuration list for PBXNativeTarget "uplift-desk-automatedTests" */;
+			buildPhases = (
+				8D52631F2EFA20E00097DAEB /* Sources */,
+				8D5263202EFA20E00097DAEB /* Frameworks */,
+				8D5263212EFA20E00097DAEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D5263252EFA20E00097DAEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8D5263262EFA20E00097DAEB /* uplift-desk-automatedTests */,
+			);
+			name = "uplift-desk-automatedTests";
+			packageProductDependencies = (
+			);
+			productName = "uplift-desk-automatedTests";
+			productReference = 8D5263232EFA20E00097DAEB /* uplift-desk-automatedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D52632C2EFA20E00097DAEB /* uplift-desk-automatedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D52633D2EFA20E00097DAEB /* Build configuration list for PBXNativeTarget "uplift-desk-automatedUITests" */;
+			buildPhases = (
+				8D5263292EFA20E00097DAEB /* Sources */,
+				8D52632A2EFA20E00097DAEB /* Frameworks */,
+				8D52632B2EFA20E00097DAEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D52632F2EFA20E00097DAEB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				8D5263302EFA20E00097DAEB /* uplift-desk-automatedUITests */,
+			);
+			name = "uplift-desk-automatedUITests";
+			packageProductDependencies = (
+			);
+			productName = "uplift-desk-automatedUITests";
+			productReference = 8D52632D2EFA20E00097DAEB /* uplift-desk-automatedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D52630D2EFA20DF0097DAEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					8D5263142EFA20DF0097DAEB = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					8D5263222EFA20E00097DAEB = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8D5263142EFA20DF0097DAEB;
+					};
+					8D52632C2EFA20E00097DAEB = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 8D5263142EFA20DF0097DAEB;
+					};
+				};
+			};
+			buildConfigurationList = 8D5263102EFA20DF0097DAEB /* Build configuration list for PBXProject "uplift-desk-automated" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D52630C2EFA20DF0097DAEB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8D5263162EFA20DF0097DAEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5263142EFA20DF0097DAEB /* uplift-desk-automated */,
+				8D5263222EFA20E00097DAEB /* uplift-desk-automatedTests */,
+				8D52632C2EFA20E00097DAEB /* uplift-desk-automatedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5263132EFA20DF0097DAEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5263212EFA20E00097DAEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D52632B2EFA20E00097DAEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5263112EFA20DF0097DAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D52631F2EFA20E00097DAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5263292EFA20E00097DAEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D5263252EFA20E00097DAEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5263142EFA20DF0097DAEB /* uplift-desk-automated */;
+			targetProxy = 8D5263242EFA20E00097DAEB /* PBXContainerItemProxy */;
+		};
+		8D52632F2EFA20E00097DAEB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D5263142EFA20DF0097DAEB /* uplift-desk-automated */;
+			targetProxy = 8D52632E2EFA20E00097DAEB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8D5263352EFA20E00097DAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D5263362EFA20E00097DAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		8D5263382EFA20E00097DAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "uplift-desk-automated/uplift_desk_automated.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.mseller.app.uplift-desk-automated";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8D5263392EFA20E00097DAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "uplift-desk-automated/uplift_desk_automated.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.mseller.app.uplift-desk-automated";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8D52633B2EFA20E00097DAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.mseller.app.uplift-desk-automatedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uplift-desk-automated.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uplift-desk-automated";
+			};
+			name = Debug;
+		};
+		8D52633C2EFA20E00097DAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.mseller.app.uplift-desk-automatedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uplift-desk-automated.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uplift-desk-automated";
+			};
+			name = Release;
+		};
+		8D52633E2EFA20E00097DAEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.mseller.app.uplift-desk-automatedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "uplift-desk-automated";
+			};
+			name = Debug;
+		};
+		8D52633F2EFA20E00097DAEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.mseller.app.uplift-desk-automatedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "uplift-desk-automated";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D5263102EFA20DF0097DAEB /* Build configuration list for PBXProject "uplift-desk-automated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5263352EFA20E00097DAEB /* Debug */,
+				8D5263362EFA20E00097DAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D5263372EFA20E00097DAEB /* Build configuration list for PBXNativeTarget "uplift-desk-automated" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D5263382EFA20E00097DAEB /* Debug */,
+				8D5263392EFA20E00097DAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D52633A2EFA20E00097DAEB /* Build configuration list for PBXNativeTarget "uplift-desk-automatedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D52633B2EFA20E00097DAEB /* Debug */,
+				8D52633C2EFA20E00097DAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D52633D2EFA20E00097DAEB /* Build configuration list for PBXNativeTarget "uplift-desk-automatedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D52633E2EFA20E00097DAEB /* Debug */,
+				8D52633F2EFA20E00097DAEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D52630D2EFA20DF0097DAEB /* Project object */;
+}
