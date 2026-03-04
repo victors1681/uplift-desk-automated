@@ -6,11 +6,11 @@ Control your Uplift standing desk from macOS with smart reminders to help you ma
 
 ## Screenshots
 
-<p align="center">
-  <img src="docs/screenshots/main-view.png" width="280" alt="Main View" />
-  <img src="docs/screenshots/settings-timer.png" width="280" alt="Timer Settings" />
-  <img src="docs/screenshots/settings-notifications.png" width="280" alt="Notifications & Presets" />
-</p>
+<table align="center"><tr>
+  <td><img src="docs/screenshots/main-view.png" width="220" alt="Main View" /></td>
+  <td><img src="docs/screenshots/settings-timer.png" width="220" alt="Timer Settings" /></td>
+  <td><img src="docs/screenshots/settings-notifications.png" width="220" alt="Notifications & Presets" /></td>
+</tr></table>
 
 ## Features
 
