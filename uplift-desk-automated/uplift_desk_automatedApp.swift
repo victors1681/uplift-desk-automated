@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct uplift_desk_automatedApp: App {
     var body: some Scene {
-        WindowGroup {
+        MenuBarExtra("Uplift Desk", systemImage: "rectangle.and.arrow.up.right.and.arrow.down.left") {
             ContentView()
         }
+        .menuBarExtraStyle(.window)
     }
 }

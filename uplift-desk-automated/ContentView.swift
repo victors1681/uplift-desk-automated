@@ -98,7 +98,7 @@ struct ContentView: View {
                 .padding()
             }
         }
-        .frame(minWidth: 300, idealWidth: 400, maxWidth: .infinity, minHeight: 600, idealHeight: 700, maxHeight: .infinity)
+        .frame(width: 340)
         .sheet(isPresented: $showingScanner) {
             DeskScannerView(bluetoothManager: bluetoothManager, isPresented: $showingScanner)
         }
