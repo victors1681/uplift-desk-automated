@@ -1,78 +1,103 @@
 # Uplift Desk Controller
 
-Control your Uplift standing desk from macOS with smart reminders to help you maintain a healthy sit-stand routine.
+Control your Uplift standing desk from macOS with smart reminders to help you maintain a healthy sit-stand routine. Runs as a **menu bar app** — always one click away, no dock clutter.
 
-![macOS](https://img.shields.io/badge/macOS-12.0+-blue) ![Swift](https://img.shields.io/badge/Swift-5.0+-orange) ![License](https://img.shields.io/badge/license-MIT-green)
+![macOS](https://img.shields.io/badge/macOS-13.0+-blue) ![Swift](https://img.shields.io/badge/Swift-5.0+-orange) ![License](https://img.shields.io/badge/license-MIT-green)
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/screenshots/main-view.png" width="280" alt="Main View" />
+  <img src="docs/screenshots/settings-timer.png" width="280" alt="Timer Settings" />
+  <img src="docs/screenshots/settings-notifications.png" width="280" alt="Notifications & Presets" />
+</p>
 
 ## Features
 
-- **Desk Control** - One-tap presets for sitting/standing, manual height adjustment
-- **Smart Reminders** - Configurable intervals to alternate positions
-- **Daily Goals** - Track and achieve your standing time goals
-- **Working Hours** - Only get reminders during work hours
-- **Auto-Move** - Optionally move desk automatically with safety countdown
-- **Auto-Connect** - Automatically connects to your last used desk
+- **Menu Bar App** - Lives in your macOS top bar, accessible anytime without a Dock icon
+- **Desk Control** - One-tap presets for sitting/standing, manual raise/lower buttons
+- **Real-time Height** - Displays current desk height in inches
+- **Smart Reminders** - Configurable intervals to alternate between sitting and standing
+- **Daily Standing Goal** - Track your progress toward a daily standing target
+- **Working Hours** - Only receive reminders during your configured work schedule
+- **Auto-Move** - Optionally move the desk automatically with a 5-second safety countdown
+- **Pause Automation** - Quickly pause/resume automatic desk movement from the menu bar icon
+- **Auto-Connect** - Reconnects to your last used desk on launch
+- **Notification Support** - System notifications with optional sound when it's time to switch
+- **Presets** - One-tap timer presets for Office Worker, Moderate, and Beginner routines
+- **Quit from Menu** - Clean shutdown button built into the panel
 
 ## Quick Start
 
 1. Open `uplift-desk-automated.xcodeproj` in Xcode
 2. Build and run (⌘R)
-3. Click "Connect to Desk"
-4. Start using your desk!
+3. Click the menu bar icon → **Connect to Desk**
+4. Start controlling your desk!
 
 ## Setup
 
 ### Requirements
-- macOS 12.0+
+- macOS 13.0+
 - Bluetooth-enabled Mac
 - Uplift desk with Bluetooth
 
 ### First Time Use
 1. Grant Bluetooth and Notification permissions when prompted
-2. Connect to your desk via the scanner
+2. Click the menu bar icon and connect to your desk via the scanner
 3. Configure reminders in Settings (⚙️ icon)
 
 ## Usage
 
 ### Basic Control
-- **Sitting/Standing buttons** - Quick presets
-- **Raise/Lower buttons** - Manual adjustment
-- **Height display** - Real-time height in inches
+- **Sitting / Standing buttons** — Move desk to your saved preset height
+- **Raise / Lower buttons** — Manual incremental adjustment
+- **Refresh Height** — Re-read current desk height over Bluetooth
+
+### Pause Automation
+- Click the **pause button** (⏸) in the header to halt all automatic desk movements
+- The menu bar icon changes to **⏸** so you can tell at a glance that automation is paused
+- Click **play** (▶) to resume — the countdown picks up from where it left off
 
 ### Timer System
-1. Open Settings and enable "Enable Position Timer"
-2. Set your daily standing goal (e.g., 4 hours)
-3. Set reminder interval (e.g., 30 minutes)
-4. Optional: Enable working hours (e.g., 9 AM - 5 PM)
-5. Optional: Enable auto-move for automatic desk adjustment
+1. Open Settings → enable **Enable Position Timer**
+2. Set your **Daily Standing Goal** (e.g. 4 hours)
+3. Set **Reminder Interval** (e.g. every 30 minutes)
+4. Optional: enable **Working Hours** (e.g. 9 AM – 5 PM)
+5. Optional: enable **Auto-Move** for automatic desk adjustment with safety countdown
 
 ### Presets
-- **Office Worker** - 4h standing, 30min intervals
-- **Moderate** - 2h standing, 45min intervals
-- **Beginner** - 1h standing, 60min intervals
+| Preset | Daily Goal | Interval |
+|--------|-----------|----------|
+| Office Worker | 4 hours | 30 min |
+| Moderate | 2 hours | 45 min |
+| Beginner | 1 hour | 60 min |
 
 ## Troubleshooting
 
 **Desk not found?**
 - Check Bluetooth is enabled
-- Ensure desk is powered on
-- Move Mac closer to desk
+- Ensure desk is powered on and nearby
+- Use the scanner to search for nearby desks
 
 **Connection fails?**
-- Disconnect other devices from desk
+- Disconnect other devices from the desk
 - Restart the app
 
 **Reminders not working?**
-- Check timer is enabled in Settings
-- Verify notification permissions
-- Check working hours settings
+- Check the timer is enabled in Settings
+- Verify notification permissions in System Settings → Notifications
+- Check your Working Hours configuration
+
+**Auto-move not triggering?**
+- Make sure Auto-Move is enabled in Settings
+- Check that automation is not paused (menu bar icon should not show ⏸)
 
 ## Technical
 
 ### BLE Protocol
-- Service: `FE60`
-- Control: `FE61` (commands)
-- Height: `FE62` (notifications)
+- Service UUID: `FE60`
+- Control characteristic: `FE61` (write commands)
+- Height characteristic: `FE62` (notify)
 
 ### Commands
 | Action | Byte |
@@ -80,19 +105,19 @@ Control your Uplift standing desk from macOS with smart reminders to help you ma
 | Wake | `0x00` |
 | Raise | `0x01` |
 | Lower | `0x02` |
-| Sit | `0x05` |
-| Stand | `0x06` |
+| Sit preset | `0x05` |
+| Stand preset | `0x06` |
 
 ## Project Structure
 
 ```
 uplift-desk-automated/
-├── ContentView.swift          # Main UI
-├── SettingsView.swift         # Settings
+├── ContentView.swift          # Main UI & menu bar panel
+├── SettingsView.swift         # Settings sheet
 ├── BluetoothManager.swift     # BLE communication
-├── DeskTimerManager.swift     # Timers & reminders
-├── TimerSettings.swift        # Settings model
-└── UpliftDesk.swift          # Desk model
+├── DeskTimerManager.swift     # Timers, reminders & pause logic
+├── TimerSettings.swift        # Settings model & persistence
+└── UpliftDesk.swift           # Desk model
 ```
 
 ## License
