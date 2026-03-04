@@ -37,6 +37,17 @@ struct ContentView: View {
                     .font(.title2)
                     .fontWeight(.semibold)
                 Spacer()
+                if timerManager.isTimerActive {
+                    Button(action: {
+                        timerManager.togglePause()
+                    }) {
+                        Image(systemName: timerManager.isPaused ? "play.circle.fill" : "pause.circle.fill")
+                            .font(.title2)
+                            .foregroundColor(timerManager.isPaused ? .orange : .secondary)
+                    }
+                    .buttonStyle(.plain)
+                    .help(timerManager.isPaused ? "Resume automation" : "Pause automation")
+                }
                 Button(action: {
                     showingSettings = true
                 }) {
@@ -322,6 +333,22 @@ struct ContentView: View {
 
     private var timerStatusSection: some View {
         VStack(spacing: 12) {
+            // Paused banner
+            if timerManager.isPaused {
+                HStack(spacing: 6) {
+                    Image(systemName: "pause.circle.fill")
+                        .foregroundColor(.orange)
+                    Text("Automation paused — desk won't move automatically")
+                        .font(.caption)
+                        .foregroundColor(.orange)
+                    Spacer()
+                }
+                .padding(.horizontal, 10)
+                .padding(.vertical, 6)
+                .background(Color.orange.opacity(0.12))
+                .cornerRadius(8)
+            }
+
             // Position and Time
             HStack {
                 VStack(alignment: .leading, spacing: 4) {

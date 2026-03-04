@@ -23,6 +23,7 @@ class DeskTimerManager: ObservableObject {
     @Published var totalStandingTimeToday: TimeInterval = 0
     @Published var isTimerActive: Bool = false
     @Published var nextReminderIn: TimeInterval = 0
+    @Published var isPaused: Bool = UserDefaults.standard.bool(forKey: "automationPaused")
 
     // MARK: - Private Properties
     private var positionTimer: Timer?
@@ -76,6 +77,11 @@ class DeskTimerManager: ObservableObject {
         scheduleNextReminder()
 
         print("⏰ Timer started")
+    }
+
+    func togglePause() {
+        isPaused.toggle()
+        UserDefaults.standard.set(isPaused, forKey: "automationPaused")
     }
 
     func stopTimer() {
@@ -147,11 +153,19 @@ class DeskTimerManager: ObservableObject {
                 timer.invalidate()
                 return
             }
-            self.nextReminderIn = max(0, self.nextReminderIn - 1)
+            if !self.isPaused {
+                self.nextReminderIn = max(0, self.nextReminderIn - 1)
+            }
         }
     }
 
     private func triggerReminder() {
+        // Skip if automation is paused
+        if isPaused {
+            scheduleNextReminder()
+            return
+        }
+
         // Check if working hours are enabled and if we're within working hours
         if settingsManager.settings.workingHoursEnabled && !isWithinWorkingHours() {
             print("⏰ Skipping reminder - outside working hours")
