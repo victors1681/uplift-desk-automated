@@ -399,6 +399,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "uplift-desk-automated/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lifto;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connect with your desk";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -427,6 +428,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "uplift-desk-automated/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Lifto;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connect with your desk";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
