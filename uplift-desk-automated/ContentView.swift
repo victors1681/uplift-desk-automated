@@ -110,6 +110,21 @@ struct ContentView: View {
             }
         }
         .frame(width: 340)
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            Divider()
+            Button(action: {
+                NSApplication.shared.terminate(nil)
+            }) {
+                HStack {
+                    Image(systemName: "power")
+                    Text("Quit")
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 10)
+                .foregroundColor(.secondary)
+            }
+            .buttonStyle(.plain)
+        }
         .sheet(isPresented: $showingScanner) {
             DeskScannerView(bluetoothManager: bluetoothManager, isPresented: $showingScanner)
         }
