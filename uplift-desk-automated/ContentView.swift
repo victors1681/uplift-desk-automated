@@ -21,6 +21,7 @@ struct ContentView: View {
     @State private var autoMoveCountdown = 5
     @State private var autoMoveCountdownTimer: Timer?
     @State private var autoMoveTargetPosition: DeskPosition = .unknown
+    @State private var autoMoveObserver: NSObjectProtocol?
 
     init() {
         let settings = TimerSettingsManager()
@@ -109,7 +110,7 @@ struct ContentView: View {
                 .padding()
             }
         }
-        .frame(width: 340)
+        .frame(minWidth: 340, maxWidth: .infinity, minHeight: 400)
         .safeAreaInset(edge: .bottom, spacing: 0) {
             Divider()
             Button(action: {
@@ -132,7 +133,14 @@ struct ContentView: View {
             SettingsView(settingsManager: settingsManager, bluetoothManager: bluetoothManager)
         }
         .onAppear {
+            guard autoMoveObserver == nil else { return }
             setupNotificationObserver()
+        }
+        .onDisappear {
+            if let observer = autoMoveObserver {
+                NotificationCenter.default.removeObserver(observer)
+                autoMoveObserver = nil
+            }
         }
         .alert(autoMoveAlertTitle, isPresented: $showingAutoMoveWarning) {
             Button("CANCEL", role: .cancel) {
@@ -483,8 +491,7 @@ struct ContentView: View {
     }
 
     private func setupNotificationObserver() {
-        // Listen for auto-move notifications
-        NotificationCenter.default.addObserver(
+        autoMoveObserver = NotificationCenter.default.addObserver(
             forName: NSNotification.Name("AutoMoveDeskNotification"),
             object: nil,
             queue: .main

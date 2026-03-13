@@ -9,16 +9,11 @@ import SwiftUI
 
 @main
 struct uplift_desk_automatedApp: App {
-    @AppStorage("automationPaused") private var isPaused = false
-
     var body: some Scene {
-        MenuBarExtra {
+        WindowGroup {
             ContentView()
-        } label: {
-            Image(systemName: isPaused
-                  ? "pause.circle.fill"
-                  : "rectangle.and.arrow.up.right.and.arrow.down.left")
+                .frame(width: 380, height: 560)
         }
-        .menuBarExtraStyle(.window)
+        .windowResizability(.contentSize)
     }
 }
